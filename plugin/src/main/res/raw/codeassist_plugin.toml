@@ -1,0 +1,14 @@
+# What the IDE reads to decide whether to load this plugin, and how to list it in
+# Settings > Plugins. It is read without running any of the plugin's code, so it has to agree
+# with what the entry point actually registers.
+[plugin]
+id = "ai-studio-mode"
+name = "AI Studio Mode"
+version = "1.0.0"
+# Must equal the IDE's PLUGIN_API_VERSION, or the plugin is rejected with that reason.
+apiVersion = 4
+description = "Plan and build apps with your own AI"
+entryPoints = ["com.copilotenhanced.app.CopilotEnhancedPlugin"]
+uiEntryPoints = ["com.copilotenhanced.app.CopilotEnhancedUiPlugin"]
+capabilities = ["ui.toolWindow"]
+
